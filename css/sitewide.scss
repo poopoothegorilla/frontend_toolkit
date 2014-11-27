@@ -1,0 +1,52 @@
+@import "bourbon/bourbon";
+
+$fonts: Futura, Wingding, Arial;
+$base-size: 16px;
+$color1: #333;
+$color2: #777;
+$color3: #F2F2F3;
+$color4: #1FDA9A;
+$color5: #EE4B3E;
+$color6: #E9BC1B;
+$color7: #F5EACD;
+
+/* RESETS */
+@import "resets";
+
+/* HELPING CLASSES */
+
+.clear-fix:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.hidden{
+  display:none;
+}
+
+/* FONT STYLING */
+@import "fontstyling";
+
+/* BUTTON TYPES */
+@import "buttons";
+
+/* INPUT STYLING */
+@import "forminputs";
+
+/* ALERT AND NOTICE */
+@import "flashmessages";
+
+/* MENUS */
+@import "menus";
+
+/* CONTAINER COLUMNS AND ROW STYLING */
+@import "container";

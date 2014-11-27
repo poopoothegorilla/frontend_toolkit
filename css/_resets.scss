@@ -1,0 +1,30 @@
+
+html, body, main, header, footer, section, blockquote, nav, ul, li, div, p, a, h6, h5, h4, h3, h2, h1{
+  font:inherit;
+  margin:0;
+  padding:0;
+  line-height:1;
+}
+
+img{
+  display: block;
+}
+
+ul{
+  list-style:none;
+}
+
+a, a:visited, a:hover{
+  font-style:none;
+  text-decoration: none;
+}
+
+button, input, textarea{
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  background: none;
+  outline: none;
+}

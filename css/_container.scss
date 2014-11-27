@@ -1,0 +1,31 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row {
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  flex-wrap: wrap;
+}
+
+.row > div{
+  padding:5px;
+}
+
+@for $i from 1 through 3 {
+  .row > div.size-#{ $i }{
+    @include flex( $i );
+  }
+}
+
+@media all and (max-width: 600px) {
+  .row {
+    @include flex-direction(column);
+  }
+  .row > div{
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,30 @@
+@mixin flash-message($bcolor, $fcolor){
+  background-color: $bcolor;
+  opacity: .5;
+  border: $bcolor solid 2px;
+  color:$fcolor;
+}
+
+.alert{
+  @extend %standard-formatting;
+  @include flash-message(red, white);
+  font-weight: bold;
+}
+
+.warning{
+  @extend %standard-formatting;
+  @include flash-message(yellow, $color1);
+}
+
+.notice{
+  @extend %standard-formatting;
+  @include flash-message(green, white);
+}
+
+@media all and (max-width: 600px){
+
+  .alert, .warning, .notice{
+    border-radius: none;
+    padding: 30px;
+  }
+}

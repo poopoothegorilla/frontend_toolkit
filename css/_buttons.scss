@@ -1,0 +1,27 @@
+%standard-formatting {
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button, input[type=submit]{
+  @extend %standard-formatting;
+  box-shadow: 1px 1px 0 1px $color2;
+  background-color: $color5;
+  color: $color7;
+  cursor: pointer;
+  @include transition(all 0.3s ease-in-out);
+}
+
+button:hover, input[type=submit]:hover{
+  background-color: $color4;
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  button, input[type=submit]{
+    padding: 20px 30px;
+    margin: 25px;
+  }
+}
